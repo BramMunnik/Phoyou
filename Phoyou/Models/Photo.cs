@@ -2,9 +2,9 @@ namespace Phoyou.Models;
 
 public class Photo
 {
-    public string Id { get; set; }
-    public string UserId { get; set; }
-    public string AssignmentId { get; set; }
-    public string ImageUrl { get; set; }
-    public DateTime UploadDate { get; set; }
+    public int Id { get; set; }
+    public int UserId { get; set; }
+    public int AssignmentId { get; set; }
+    public string ImageUrl { get; set; } // Firebase/Server URL
+    public DateTime UploadedAt { get; set; } = DateTime.UtcNow;
 }
